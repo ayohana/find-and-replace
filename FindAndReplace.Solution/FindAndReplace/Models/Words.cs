@@ -1,6 +1,6 @@
-namespace ProjectName.Models
+namespace FindAndReplace.Models
 {
-  public class ClassName
+  public class Words
   {
     // properties, constructors, methods, etc. go here
     

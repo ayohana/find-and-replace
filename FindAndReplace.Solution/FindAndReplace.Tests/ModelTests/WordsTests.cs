@@ -1,10 +1,10 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using ProjectName;
+using FindAndReplace;
 
-namespace ProjectName.Tests
+namespace FindAndReplace.Tests
 {
   [TestClass]
-  public class ClassNameTests
+  public class WordsTests
   {
     // Test methods go here
   }
