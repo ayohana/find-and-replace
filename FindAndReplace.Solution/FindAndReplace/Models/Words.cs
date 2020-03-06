@@ -7,7 +7,6 @@ namespace FindAndReplace.Models
     public string FindAndReplace(string sentence, string searchFor, string replaceWith)
     {
       int startSentence = 0;
-      int endSentence = sentence.Length;
       int startWordFound = sentence.IndexOf(searchFor);
       int endWordFound = startWordFound + searchFor.Length;
 
