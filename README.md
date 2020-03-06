@@ -18,8 +18,9 @@
 | **Program Gathers and Stores User Input of Original Sentence** | Hello world | `Stored:` Hello world |
 | **Program Gathers and Stores User Input of a Word to be Searched For Replacement** | world | `Stored:` world |
 | **Program Gathers and Stores User Input of a Replacement World** | universe | `Stored:` universe |
-| **Program Searches for Word to be Replaced** | world | `Returns index of word found in sentence` |
-| **Program Replaces Word Found with a Replacement World** | Hello world, world, universe | Hello universe |
+| **Program Finds Word to be Replaced** | world | `Returns index of word found in sentence` |
+| **Program Finds and Replaces Word** | Hello world, world, universe | Hello universe |
+| **Program Finds and Replaces Word Mid-Sentence** | Good morning world, morning, night | Good night world |
 
 </details>
 
