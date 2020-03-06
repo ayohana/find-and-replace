@@ -1,26 +1,26 @@
-using System;
-
 namespace FindAndReplace.Models
 {
   public class Words
   {
-    public string Sentence { get; set; }
-    public string SearchFor { get; set; }
-    public string ReplaceWith { get; set; }
     public string NewSentence { get; set; }
 
     public string FindAndReplace(string sentence, string searchFor, string replaceWith)
     {
-      Sentence = sentence;
-      SearchFor = searchFor;
-      ReplaceWith = replaceWith;
+      int startSentence = 0;
+      int endSentence = sentence.Length;
+      int startWordFound = sentence.IndexOf(searchFor);
+      int endWordFound = startWordFound + searchFor.Length;
 
-      if (Sentence.IndexOf(SearchFor) != -1)
+      if (sentence.IndexOf(searchFor) != -1)
       {
-        NewSentence = Sentence.Substring(0, Sentence.IndexOf(SearchFor));
-        NewSentence += ReplaceWith;
+        NewSentence = sentence.Substring(startSentence, startWordFound);
+        //stringName.Substring(firstParam, secondParam) will return a substring starting from firstParam to secondParam. However, keep in mind that when handling substrings, this method might not take empty spaces into account of the substring's index number.
+
+        NewSentence += replaceWith;
+        
+        NewSentence += sentence.Substring(endWordFound);
+        //stringName.Substring(singleParameter) will return a substring starting from singleParameter until the end of the stringName.
       }
-      Console.WriteLine(NewSentence);
       return NewSentence;
     }
     
