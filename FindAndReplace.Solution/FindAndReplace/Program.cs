@@ -1,5 +1,4 @@
 using System;
-using System.Collections.Generic;
 using FindAndReplace.Models;
 
 namespace FindAndReplace
@@ -8,9 +7,16 @@ namespace FindAndReplace
   {
     public static void Main()
     {
+      Console.WriteLine("Enter a sentence:");
+      string sentence = Console.ReadLine();
+      Console.WriteLine("Enter a word you want to replace in your sentence:");
+      string searchFor = Console.ReadLine();
+      Console.WriteLine("Enter a replacement word to replace the word you just mentioned:");
+      string replaceWith = Console.ReadLine();
 
-      // UI code goes here
-
+      Words newWords = new Words();
+      Console.WriteLine(">>> Here's your new sentence:");
+      Console.WriteLine(newWords.FindAndReplace(sentence, searchFor, replaceWith)); 
     }
   }
 }
