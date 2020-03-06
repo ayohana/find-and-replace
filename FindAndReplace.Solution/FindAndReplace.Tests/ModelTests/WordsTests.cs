@@ -35,5 +35,14 @@ namespace FindAndReplace.Tests
       string expectedOutput = "Hello universe";
       Assert.AreEqual(expectedOutput, actualOutput);
     }
+
+    [TestMethod]
+    public void FindAndReplace_SearchAnotherWordAndReplaceWord_String()
+    {
+      Words newWords = new Words();
+      string actualOutput = newWords.FindAndReplace("Good morning world", "morning", "night");
+      string expectedOutput = "Good night world";
+      Assert.AreEqual(expectedOutput, actualOutput);
+    }
   }
 }
