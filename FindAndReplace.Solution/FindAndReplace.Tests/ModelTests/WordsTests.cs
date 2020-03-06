@@ -1,5 +1,5 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using FindAndReplace;
+using FindAndReplace.Models;
 
 namespace FindAndReplace.Tests
 {
@@ -31,9 +31,9 @@ namespace FindAndReplace.Tests
     public void FindAndReplace_SearchForWordAndReplaceWord_String()
     {
       Words newWords = new Words();
-      newWords.FindAndReplace("Hello world", "world", "universe");
+      string actualOutput = newWords.FindAndReplace("Hello world", "world", "universe");
       string expectedOutput = "Hello universe";
-      Assert.AreEqual(expectedOutput, newWords.FindAndReplace());
+      Assert.AreEqual(expectedOutput, actualOutput);
     }
   }
 }
